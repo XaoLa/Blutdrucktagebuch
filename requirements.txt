@@ -13,7 +13,6 @@ StringIO
 base64
 json
 functions.login
-*
 functions.dataHandler
 DataHandler
 datetime
