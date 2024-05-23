@@ -7,6 +7,15 @@ streamlit-authenticator
 bcrypt
 binascii
 requests
+Session
 io
+StringIO
 base64
 json
+functions.login
+*
+functions.dataHandler
+DataHandler
+datetime
+timedelta
+GithubContents
