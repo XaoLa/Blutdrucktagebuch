@@ -1,0 +1,12 @@
+streamlit
+pandas
+numpy
+streamlit-calendar
+PyYAML
+streamlit-authenticator
+bcrypt
+binascii
+requests
+io
+base64
+json
