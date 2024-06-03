@@ -1,6 +1,6 @@
 import streamlit as st
 st.title('Hypotonie (Niedriger Blutdruck)')
-st.write('Definition: Hypotonie liegt vor, wenn der Blutdruck unter 90/60 mmHg liegt. 
+st.write('Definition: Hypotonie liegt vor, wenn der Blutdruck unter 90/60 mmHg liegt.') 
 multi = ''' Ursachen  
 - Dehydration: Flüssigkeitsmangel durch unzureichende Aufnahme oder übermäßigen Verlust.
 - Längeres Liegen: Bettlägerigkeit.
