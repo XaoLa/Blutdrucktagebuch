@@ -18,8 +18,9 @@ st.write('**Salzkonsum erhöhren:** In Absprache mit dem Arzt kann eine moderate
 
 
 multi = '''**Mahlzeiten:** Häufigere kleine Mahlzeiten helfen, den Blutdruck stabil zu halten.  
-**Langsame Positionswechsel:** Vermeidung plötzlic
-
-Two (or more) newline characters in a row will result in a hard return.
+**Langsame Positionswechsel:** Vermeidung plötzlichlicher Wechsel von einer liegenden oder sitzenden in eine stehende Position, um Schwindel und Blutdruckabfall zu vermeiden.  
+**Kompressionsstrümpfe:** Diese können helfen, das Blut zurück zum Herzen zu pumpen und den Blutdruck zu erhöhen.  
+**Ausreichende Flüssigkeitszufuhr:** Mindestens  2-3 Liter Flüssigkeit pro Tag, vorzugsweise Wasser oder ungesüßter Tee.  
+**Salzkonsum erhöhren:** In Absprache mit dem Arzt kann eine moderate Erhöhung des Salzkonsums helfen, den Blutdruck zu erhöhen.
 '''
 st.markdown(multi)
