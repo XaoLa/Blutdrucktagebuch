@@ -1,8 +1,7 @@
 import streamlit as st
 st.title('Nicht medikamentöse Maßnahmen')
 st.write('**DASH-Diät:** Ernährungsweise mit viel Obst, Gemüse, Vollkornprodukten, mageren Proteinen und fettarmen Milchprodukten.') 
-st.write('**Salzkonsum reduzieren:** Nicht mehr als 5-6 Gramm 
-Salz pro Tag.') 
+st.write('**Salzkonsum reduzieren:** Nicht mehr als 5-6 Gramm Salz pro Tag.') 
 st.write('**Regelmäßige körperliche Aktivität Ausdauersport:** Mindestens 30 Minuten moderate Bewegung an den meisten Tagen der Woche (z.B. schnelles Gehen, Joggen, Radfahren).') 
 st.write('**Gewichtskontrolle Gewichtsreduktion:** Erreichen und Halten eines gesunden BMI und Reduzierung des Bauchumfangs.') 
 st.write('**Verzicht auf Rauchen und Alkohol:** Signifikante Verbesserung der allgemeinen Gesundheit und Blutdrucksenkung.') 
