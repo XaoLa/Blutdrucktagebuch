@@ -1,5 +1,5 @@
-### Erarbeitungsprozess
-## Idee und Planung
+## Erarbeitungsprozess
+### Idee und Planung
 Zuerst machten wir uns mit Streamlit und GitHub vertraut. Schnell hatten wir eine Idee und entschieden uns für ein Blutdrucktagebuch. Wir erstellten Skizzen und Wireframes und passten sie nach Feedback an.
 ## Programmierung
 Die Umsetzung der Skizzen erwies sich schwieriger als gedacht. Die App-Entwicklung war aufwendig und brachte viele Probleme mit sich. Besonders der Login und die grafische Gestaltung waren herausfordernd und wir mussten oft Ideen überdenken und priorisieren. Dennoch haben wir viel über Programmierung und Design gelernt.  
