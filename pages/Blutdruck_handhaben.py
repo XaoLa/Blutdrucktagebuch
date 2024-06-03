@@ -14,3 +14,12 @@ st.write('**Langsame Positionswechsel:** Vermeidung plötzlicher Wechsel von ein
 st.write('**Kompressionsstrümpfe:** Diese können helfen, das Blut zurück zum Herzen zu pumpen und den Blutdruck zu erhöhen.')
 st.write('**Ausreichende Flüssigkeitszufuhr:** Mindestens  2-3 Liter Flüssigkeit pro Tag, vorzugsweise Wasser oder ungesüßter Tee.')
 st.write('**Salzkonsum erhöhren:** In Absprache mit dem Arzt kann eine moderate Erhöhung des Salzkonsums helfen, den Blutdruck zu erhöhen.')
+
+
+
+multi = '''**Mahlzeiten:** Häufigere kleine Mahlzeiten helfen, den Blutdruck stabil zu halten.  
+**Langsame Positionswechsel:** Vermeidung plötzlic
+
+Two (or more) newline characters in a row will result in a hard return.
+'''
+st.markdown(multi)
