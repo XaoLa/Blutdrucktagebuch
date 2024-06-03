@@ -1,5 +1,5 @@
 import streamlit as st
-st.title('Richtig Blutdruckmessen')
+st.title('Richtig Blutdruck messen')
 st.subheader('Vorbereitung')
 multi = ''' - **Ruhepause einlegen:** Vor der Messung sollte man mindestens 5 Minuten in Ruhe sitzen, um den Kreislauf zu beruhigen.  
 - **Körperhaltung:** Setzen Sie sich bequem hin, mit dem Rücken an eine Lehne gelehnt. Die Füße sollten flach auf dem Boden stehen und die Beine nicht überkreuzt sein.  
