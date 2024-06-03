@@ -7,7 +7,7 @@ multi = ''' - **Ruhepause einlegen:** Vor der Messung sollte man mindestens 5 Mi
 '''
 st.markdown(multi)
 
-st.subheader('Vorbereitung')
+st.subheader('Blutdruck messen')
 multi = ''' - **Manschette anlegen:** Legen Sie die Manschette des Blutdruckmessgeräts etwa 2–3 cm über dem linken Ellbogen um den Oberarm. Die Manschette sollte eng anliegen, aber nicht einschnüren.  
 - **Messgerät starten:** Schalten Sie das Blutdruckmessgerät ein und starten Sie die Messung gemäß den Anweisungen des Herstellers.  
 - **Stillhalten:** Während der Messung sollten Sie ruhig sitzen und nicht sprechen oder sich bewegen.  
