@@ -109,7 +109,7 @@ if st.session_state["authentication"]:
     filteredDystolData = list(filter(filterFunctionB, sortedList))
 
     # Fill missing slots for both lists
-    time_range = pd.date_range(start='2024-05-23T00:00:00', end='2024-05-23T23:59:00', freq='30T')
+    time_range = pd.date_range(start='2024-06-03T00:00:00', end='2024-06-03T23:59:00', freq='30T')
     systolData = fill_missing_slots(filteredSystolData, time_range, default_item_A)
     dystolData = fill_missing_slots(filteredDystolData, time_range, default_item_B)
     data = {
