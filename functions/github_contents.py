@@ -40,7 +40,9 @@ class GithubContents:
         "Returns (file_contents_in_bytes, sha1)"
         # Try reading using content API
         content_url = "{}/contents/{}".format(self.base_url(), filepath)
+        print(content_url)
         response = self.session.get(content_url, headers=self.headers())
+        print(response)
         if response.status_code == 200:
             data = response.json()
             return base64.b64decode(data["content"]), data["sha"]
