@@ -161,7 +161,7 @@ main()  # sets the authentication status
 # Handle authentication status
 if st.session_state["authentication"]:
     handler = DataHandler(githubContents=st.session_state.github)
-    st.session_state.calendarEvents = handler.load_object("dataFile.csv") or []
+    st.session_state.calendarEvents = handler.load_object("EventTable.csv") or []
     sortedList = sorted(st.session_state.calendarEvents, key=lambda x: x["start"])
     filteredSystolData = list(filter(filterFunctionA, sortedList))
     filteredDystolData = list(filter(filterFunctionB, sortedList))
