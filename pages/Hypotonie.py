@@ -1,5 +1,5 @@
 import streamlit as st
-st.title('Hypertonie und Hypotonie)
+st.title('Hypertonie und Hypotonie')
 
 st.subheader('Hypertonie')
 st.write('**Definition:** Hypertonie liegt vor, wenn der Blutdruck dauerhaft über 140/90 mmHg liegt.') 
