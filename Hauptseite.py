@@ -24,29 +24,6 @@ calendar_options = {
     ],
 }
 
-# https://fullcalendar.io/docs/event-object
-
-# test_dict = [
-#      {
-#   "title": "44",
-#   "start": "2024-05-23T09:00:00",
-#   "end": "2024-05-23T09:30:00",
-#   "resourceId": "b"
-# },
-# {
-#   "title": "44",
-#   "start": "2024-05-23T09:00:00",
-#   "end": "2024-05-23T09:30:00",
-#   "resourceId": "b"
-# },
-# {
-#   "title": "44",
-#   "start": "2024-05-23T09:00:00",
-#   "end": "2024-05-23T09:30:00",
-#   "resourceId": "b"
-# }
-# ]
-
 custom_css="""
    .fc-event-past {
         opacity: 0.8;
@@ -73,7 +50,7 @@ def edit(item):
     value = st.text_input("Wert", item["title"])
     if st.button("Submit"):
         entryData["title"] = value
-        handler.save_object(obj=st.session_state.calendarEvents, commit_message="Updaten")
+        handler.save_object(fileName="EventTable.csv", obj=st.session_state.calendarEvents, commit_message="Updaten")
         st.rerun()
 
     if st.button("Löschen"):
@@ -90,18 +67,8 @@ def create(item):
         trimmedDate = item["date"][:-5]
         newData = {"title": value, "start": trimmedDate, "end": addHalfHour(trimmedDate), "resourceId": resourceId}
         st.session_state.calendarEvents.append(newData)
-        handler.save_object(obj=st.session_state.calendarEvents, commit_message="Erstellen")
+        handler.save_object(fileName="EventTable.csv", obj=st.session_state.calendarEvents, commit_message="Erstellen")
         st.rerun()
-
-# def handleSave(item):
-#     value = st.text_input("Wert")
-#     if st.button("Submit"):
-#         resourceId = item["resource"]["id"]
-#         # to remove last part of unwanted date
-#         trimmedDate = item["date"][:-5]
-#         data = {"title": value, "start": trimmedDate, "end": addHalfHour(trimmedDate), "resourceId": resourceId}
-#         handler.save_object(obj=data, commit_message="Erstellen")
-#         st.rerun()
 
 def searchForItem(target_title, target_start, target_end):
     return next((d for d in st.session_state.calendarEvents if d["title"] == target_title and d["start"] == target_start and d["end"] == target_end), None)
@@ -118,31 +85,6 @@ def filterFunctionA(x):
 
 def filterFunctionB(x):
     return x["resourceId"] == "b"
-
-# def fill_missing_slots(sorted_list, default_item):
-#     if not sorted_list:
-#         return []
-
-#     filled_list = []
-#     for i in range(len(sorted_list)):
-#         current_item = sorted_list[i]
-#         filled_list.append(current_item)
-
-#         # Skip if it's the last item in the list
-#         if i == len(sorted_list) - 1:
-#             break
-
-#         current_end = datetime.fromisoformat(current_item["end"])
-#         next_start = datetime.fromisoformat(sorted_list[i + 1]["start"])
-
-#         while current_end + timedelta(minutes=30) < next_start:
-#             current_end += timedelta(minutes=30)
-#             new_item = default_item.copy()
-#             new_item["start"] = current_end.isoformat()
-#             new_item["end"] = (current_end + timedelta(minutes=30)).isoformat()
-#             filled_list.append(new_item)
-
-#     return filled_list
 
 def fill_missing_slots(data, time_range, default_item):
     filled_data = []
