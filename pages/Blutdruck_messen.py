@@ -18,3 +18,9 @@ st.write('Wichtige Hinweise')
 st.write('Bilder')
 
 
+st.subheader ('Erniegrigter Blutdruck') 
+multi = ''' - Ruhepause einlegen: Vor der Messung sollte man mindestens 5 Minuten in Ruhe sitzen, um den Kreislauf zu beruhigen.  
+- Körperhaltung: Setzen Sie sich bequem hin, mit dem Rücken an eine Lehne gelehnt. Die Füße sollten flach auf dem Boden stehen und die Beine nicht überkreuzt sein.  
+- Armposition: Der Arm sollte auf Herzhöhe gelagert sein. Am besten legt man den Arm auf einen Tisch, um ihn zu stützen.
+'''
+st.markdown(multi)
