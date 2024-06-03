@@ -8,7 +8,7 @@ class DataHandler:
     def __init__(self, githubContents):
         self.github_contents = githubContents
 
-    def save_object(self, obj, commit_message):
+    def save_object(self, fileName, obj, commit_message):
         """
         Save an object to a file in the GitHub repository.
 
@@ -17,7 +17,7 @@ class DataHandler:
         - obj: dict, the object to be serialized and saved.
         - commit_message: str, the commit message for the operation.
         """
-        self.github_contents.write_json("dataFile.csv", obj, commit_message)
+        self.github_contents.write_json(fileName, obj, commit_message)
 
     def load_object(self, filepath):
         """
@@ -31,7 +31,7 @@ class DataHandler:
         """
         return self.github_contents.read_json(filepath)
 
-    def update_object(self, obj, commit_message):
+    def update_object(self, fileName, obj, commit_message):
         """
         Update an object in a file in the GitHub repository.
 
@@ -40,9 +40,9 @@ class DataHandler:
         - obj: dict, the updated object to be saved.
         - commit_message: str, the commit message for the operation.
         """
-        self.save_object("dataFile.csv", obj, commit_message)
+        self.save_object(fileName, obj, commit_message)
 
-    def delete_object(self, commit_message):
+    def delete_object(self, fileName, commit_message):
         """
         Delete an object from a file in the GitHub repository.
 
@@ -50,7 +50,7 @@ class DataHandler:
         - filepath: str, the file path where the object is located.
         - commit_message: str, the commit message for the operation.
         """
-        self.github_contents.write_text("dataFile.csv", "[]", commit_message)
+        self.github_contents.write_text(fileName, "[]", commit_message)
 
 # # Example usage:
 # if __name__ == "__main__":
